@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esto no es para todos…</title>
+  <style>
+    body {
+      background-color: #cdd2c2;
+      background-image: radial-gradient(white 1px, transparent 1px);
+      background-size: 30px 30px;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .intro {
+      font-size: 1em;
+      font-style: italic;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #4a5a3f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    .carta {
+      display: none;
+      white-space: pre-line;
+      font-size: 1.1em;
+      line-height: 1.6;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .firma {
+      margin-top: 30px;
+      font-style: italic;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="intro">
+    No sé qué cara están poniendo los que llegaron hasta acá, pero seguro más de uno ya se inventó una telenovela en la cabeza 😂.<br>
+    Igual no importa, porque aunque nadie entienda nada… con que vos lo entiendas, me alcanza.
+  </div>
+
+  <button onclick="mostrarCarta()">🎵 Reproducir canción y leer carta</button>
+
+  <div id="carta" class="carta">
+Hola,
+
+No sé bien cómo empezar esto, pero tenía muchas ganas de escribirte. Hay cosas que me vengo guardando hace años y no me las quiero seguir quedando.
+
+Desde que te conocí, algo en mí cambió. No sé explicarlo muy bien, pero fue como si mi corazón hubiese dicho “es por acá”. Y aunque a veces me hago el distraído, la verdad es que te pienso mucho más de lo que debería.
+
+Tu presencia siempre fue como una especie de refugio para mí. No te imaginás lo feliz que me sentía solo con verte, aunque no pasara nada más. Era como si todo cobrara sentido. Pero también, y no te voy a mentir, hubo veces en las que sentí tu distancia… y sí, lloré. No lo dije nunca, pero me dolía sentirte lejos, como si te estuvieras yendo de a poquito y yo no pudiera hacer nada.
+
+Hay algo entre nosotros, no sé cómo llamarlo. No sé si es amor, cariño, o qué nombre ponerle. Solo sé que está, que existe, y que yo lo siento. Hace años. No me pasó nunca con nadie más. Y aunque vos ya lo sabés, quería decírtelo con todas las letras.
+
+También me acuerdo de nuestros momentos más livianos, esas veces que te decía que comas bien... y si no ya sabés… 💉 (¡jaja, vos entendés!). Me sale natural preocuparme por vos, porque te quiero bien, feliz y cuidada, incluso desde lejos.
+
+No escribí esto esperando algo. Solo quería que lo sepas, así, sin vueltas. Porque lo siento, y callarlo me pesa.
+
+PD: Si algún día te pasa algo, cualquier cosa, yo voy a estar. Corriendo como si no hubiera un mañana, o volando en el auto como loco. Porque sí… hasta mi auto te extraña.
+  </div>
+
+  <div class="firma">
+    Si llegaste hasta acá, es porque la curiosidad te ganó. Pero tranquilo, no hay spoilers ni finales alternativos.<br>
+    Solo una historia que, aunque todos lean, solo una persona entenderá de verdad. 😉
+  </div>
+
+  <script>
+    function mostrarCarta() {
+      window.open("https://www.youtube.com/watch?v=-D_CivXVjzg", '_blank');
+      document.getElementById('carta').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
